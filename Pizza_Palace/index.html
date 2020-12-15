@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>Pizza Palace</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+        <meta content="width=device-width,initial-scale=1.0" name="viewport">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="icon" href="images/pizza-icon.png">
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Pizza Palace</h1>
+              <p class="lead">We have the best pizza in town!</p>
+            </div>
+          </div>
+		<h3 id="order">Order Here</h3>
+			<form id="menu-wrap">
+            <!--Size of Pizza-->
+				<div class="menu">
+					<h3>Size</h3>
+                   <input type="radio" class="size" name="size" value="Personal Pizza" required="required" checked>Personal . . . . . . . .  . $7.00<br>
+                    <input type="radio" class="size" name="size" value="Small Pizza" required="required">Small . . . . . . . . . . .  $10.00<br>
+					<input type="radio" class="size" name="size" value="Medium Pizza" required="required">Medium . . . . . . . . . .    $13.00<br>
+					<input type="radio" class="size" name="size" value="Large Pizza" required="required">Large . . . . . . . . . . . $17.00<br>
+                    <input type="radio" class="size" name="size" value="Extra Large Pizza" required="required">Family . . . . . . .  . . .  $21.00<br>
+                </div>
+        	<!--Veggies-->
+				<div class="menu">
+					<h3>Veggies</h3>
+					<input type="checkbox" class="toppings" name="veggies" value="Onions">Onions<br>
+					<input type="checkbox" class="toppings" name="veggies" value="Olives">Black Olives<br>
+					<input type="checkbox" class="topppings" name="veggies" value="Green Peppers">Banana Peppers<br>
+					<input type="checkbox" class="toppings" name="veggies" value="Mushrooms">Mushrooms<br>
+                    <input type="checkbox" class="topppings" name="veggies" value="Spinach">Garlic<br>	
+					<br>
+				</div>
+					
+			<!--Protein-->
+				<div class="menu">
+					<h3>Meat</h3>
+					<input type="checkbox" class="toppings" name="meat" value="Pepperoni">Pepperoni<br>
+					<input type="checkbox" class="toppings" name="meat" value="Sausage">Sausage<br>
+                    <input type="checkbox" class="toppings" name="meat" value="Bacon">Bacon<br>
+                    <input type="checkbox" class="toppings" name="meat" value="Chicken">Chicken<br>
+                    <input type="checkbox" class="toppings" name="meat" value="Italian Sausage">Italian Sausage<br>
+					<br>
+                </div>
+                
+            <!--Sauce-->
+				<div class="menu">
+					<h3>Sauce</h3>
+                   <input type="radio" class="sauce" name="sauce" value="marinara">Marinara<br>
+                    <input type="radio" class="sauce" name="sauce" value="alfredo">Alfredo<br>
+					<input type="radio" class="sauce" name="sauce" value="Garlic">Garlic<br>
+					<input type="radio" class="sauce" name="sauce" value="Pesto">Pesto<br>
+                </div>
+            <div id="cart">
+                <div class="button" onclick="getReceipt()">
+                    <p>Order Subtotal</p>
+            </div>
+                <div class="button" onclick="">
+                    <p>Place Order</p>
+                </div>
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+                
+            </div>
+            </form>
+        </div>
+        <div id="footer">
+            <p>Copyright Pizza Palace 2020</p>
+        </div>	
+        <script src="style.js" defer></script>
+    </body>
+</html>
